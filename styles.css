@@ -1,0 +1,193 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: hsl(179, 47%, 52%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --dark-yellow: hsl(71, 73%, 45%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --blue: hsl(228, 45%, 44%);
+    --white: hsl(0, 0%, 100%);
+    --transparent-white: rgba(255, 255, 255, 0.4);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Karla", monospace;
+    background-color: var(--light-gray);
+    font-weight: 400;
+}
+
+.card {
+    background-color: var(--white);
+    margin: 10.18rem auto;
+    height: 29.68rem;
+    width: 39.68rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 15px 120px -10px rgba(0,0,0,0.45);
+}
+
+.card__join {
+    height: 45%;
+    padding: 2.5rem;
+}
+
+.join__title {
+    color: var(--cyan);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.join__subtitle {
+    color: var(--bright-yellow);
+    margin: 1.4rem 0 1rem;
+    font-size: 1.1rem;
+}
+
+.join__text {
+    font-weight: 400;
+    color: var(--grayish-blue);
+    line-height: 1.5rem;
+}
+
+.card__grid {
+    height: 55%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid__subscription {
+    padding: 2.5rem;
+    background-color: var(--cyan);
+}
+
+.subscription__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.subscription__price {
+    margin: 1.3rem 0 .5rem;
+    display: flex;
+    gap: .6rem;
+    align-items: center;
+}
+
+.price__value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.price__text {
+    color: var(--transparent-white);
+}
+
+.subscription__text {
+    color: var(--white);
+    margin: .5rem 0 2rem;
+}
+
+.subscription__button {
+    height: 3rem;
+    width: 100%;
+    background-color: var(--bright-yellow);
+    font-family: "Karla";
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--white);
+    border: none;
+    border-radius: .3rem;
+    box-shadow: 0 10px 60px -10px rgba(0,0,0,0.40);
+}
+
+.subscription__button:active {
+    background-color: var(--dark-yellow);
+}
+
+.grid__us {
+    padding: 2.5rem;
+    background-color: var(--light-cyan);
+}
+
+.us__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 1.3rem;
+}
+
+.us__list {
+    color: var(--light-gray);
+    font-size: .9rem;
+    line-height: 1.2rem;
+    list-style: none;
+}
+
+.footer {
+    text-align: center;
+    font-size: 11px;
+}
+
+.footer__link {
+    color: var(--blue);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .card {
+        height: 45.12rem;
+        width: 19.43rem;
+    }
+
+    .card__join {
+        height: 35%;
+        padding: 1.8rem;
+    }
+
+    .join__title {
+        font-size: 1.2rem;
+    }
+
+    .join__subtitle {
+        font-size: 1rem;
+    }
+
+    .join__text {
+        font-size: .8rem;
+    }
+
+    .card__grid {
+        grid-template-columns:  1fr;
+        height: 65%;
+    }
+
+    .grid__subscription {
+        padding: 1.8rem;
+    }
+
+    .subscription__title {
+        font-size: 1.1rem;
+    }
+
+    .subscription__text {
+        font-size: .9rem;
+    }
+
+    .grid__us {
+        padding: 1.8rem;
+    }
+
+    .us__title {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    
+}
